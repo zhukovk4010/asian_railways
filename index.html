@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Азиатские ж.д.</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+        <link rel="stylesheet" href="main/css/main.css">
+
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="map"></section>
+        <section id='name'>ИСТОРИЯ РАЗВИТИЯ ЖЕЛЕЗНЫХ ДОРОГ АЗИАТСКОЙ ЧАСТИ РОССИИ</section>
+        <section class="map-overlay top">
+            <section class="map-overlay-inner">
+                <h3 id="timeline">Временная шкала</h3>
+                <h4 style="text-align: center;">1875 – 2010</h3>
+                <label id="year"></label>
+                <input id="slider" type="range" min="0" max="9" step="1" value="9">
+            </section>
+        </section>
+        <img class="pictures" src="main/pictures/train.png">
+        <button onClick="openModal1()" class="btn_info" title="Информация">i</button>
+        <button onClick="openModal2()" class="btn_legend" title="Легенда">l</button>
+        <section class="control"></section>
+
+        
+        <div id="modal1" style="display: none;" class="modal">
+            <button onClick="openModal1()" class="modal-close">X</button>
+            <div class="modal-content">
+                <h3 id="heading">Карта истории развития железных дорог азиатской части России</h3>
+                <p>Карта разработана в Московском государственном университете геодезии и картографии
+                    на кафедре визуализации геоданных и картографического дизайна.<br>
+                    Границы территории и названия даны на 2021 год. Развитие железных дорог показано в период 
+                    с 1875 по 2010 год.
+                </p>
+                <p style="text-align: left;">Разработчик: Студент КиГ 4-3б
+                    Жуков Кирилл
+                </p>
+                <p style="text-align: left">Научный руководитель: Ковалев Алексей Владимирович </p>
+            </div>
+        </div>
+
+        <div id="modal2" style="display: none;" class="modal">
+            <button onClick="openModal2()" class="modal-close">X</button>
+            <img class="pictures2" src="main/pictures/legend.png" >   
+        </div>
+    </body>
+
+    <script src="main/js/map.js"></script>
+</html>

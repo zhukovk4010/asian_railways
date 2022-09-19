@@ -1,0 +1,186 @@
+body {
+    background-color: antiquewhite;
+    margin-left: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.map-overlay {
+    font: 16px/10px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    text-shadow: rgb(255, 255, 255) 10px;
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    left: 30%;
+    padding: 5px;
+    z-index: 2;
+}
+
+.map-overlay .map-overlay-inner {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+    text-shadow: rgb(255, 255, 255) 10px;
+    border-radius: 3px;
+    padding: 2px;
+    margin-bottom: 5px;
+    vertical-align: unset;
+}
+
+.map-overlay h3 {
+    line-height: 5px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-shadow: rgb(255, 255, 255) 0 0 4px;
+}
+
+.map-overlay input {
+    background-color: transparent;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5px;
+    cursor: ew-resize;
+}
+
+#timeline {
+    text-shadow: rgb(255, 255, 255) 0 0 4px;
+}
+
+#name {
+    font: 20px/20px 'Roboto', Arial, Helvetica, sans-serif;
+    color: rgb(131, 82, 42);
+    font-weight: 700;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(131, 82, 42);
+    box-shadow: 5px 5px 3px 0px rgba(131, 82, 42, 0.247);
+    padding: 5px;
+    margin: 3px;
+}
+
+.btn_info {
+    font: 20px/20px 'PT Serif', Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    color: rgb(131, 82, 42);
+    z-index: 2;
+    right: 0;
+    bottom: 52%;
+    margin-right: 0.5% ;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border-color: rgb(131, 82, 42);
+    box-shadow: 5px 5px 3px 0px rgba(131, 82, 42, 0.247);
+    transition-duration: 0.4s;
+}
+
+.btn_info:hover {
+    background-color: antiquewhite;
+}
+
+.btn_legend {
+    font: 20px/20px 'PT Serif', Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    color: rgb(131, 82, 42);
+    z-index: 2;
+    right: 0;
+    bottom: calc(52% - 50px);
+    margin-right: 0.5% ;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border-color: rgb(131, 82, 42);
+    box-shadow: 5px 5px 3px 0px rgba(131, 82, 42, 0.247);
+    transition-duration: 0.4s;
+}
+
+.btn_legend:hover {
+    background-color: antiquewhite;
+}
+
+.pictures {
+    position: absolute;
+    z-index: 2;
+    max-width: 15%;
+    max-height: 15%;
+    margin: 0 0 10px 10px;
+    bottom: 0;
+    right: 0;
+}
+
+.pictures2 {
+    position: absolute;
+    z-index: 2;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+}
+
+.control {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    margin-right: 0.5%;
+    z-index: 2;
+}
+
+.modal {
+    position: fixed;
+    top: 25%;
+    width: 350px;
+    height: 400px;
+    left: calc(50% - 175px);
+    background-color: #fff;
+    z-index: 9;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(131, 82, 42);
+    border-width: 1px;
+    box-shadow: 5px 5px 3px 0px rgba(131, 82, 42, 0.247);
+}
+
+.modal-content {
+    margin: 25px 15px;
+    font: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#heading {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px/18px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(131, 82, 42);
+}
+.modal-close {
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.mapboxgl-ctrl-top-right {
+    top: 5px;
+}
+
+@media all and (max-width: 600px) {
+    .pictures {
+        max-width: 20%;
+        max-height: 30%;
+    }
+}
+
+p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px/16px;
+}
